@@ -1,10 +1,11 @@
 body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: roboto,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: space-between;
+
 }
 
 .header{
@@ -12,31 +13,40 @@ body{
     justify-content: flex-end;
     gap: 20px;
     background-color: #1F2937;
-    color: #f9faf8
+    color: #f9faf8;
+    flex: 0 0 auto;
 }
 
 .headerLogo{
     font-size: 24px;
     font-weight: 900;
     margin-right: auto;
-    color: #f9faf8
+    color: #f9faf8;
 }
 
 .headerLink{
     color: #f9faf8;
 }
 
+
+
 .section1{
     background-color: #1F2937;
     display: flex;
     padding: 20px;
+    justify-content: space-around;
 }
 
 .splitBox{
     display: flex;
     flex-direction: column;
     color: #f9faf8;
+    flex-basis: 500px;
+    gap:15px;
+}
 
+.splitBox > button {
+    border: none;
 }
 
 .section1title{
@@ -56,7 +66,8 @@ body{
 button{
     background-color: #3882f6;
     color: #f9faf8;
-    border: none;
+    border: 2px solid;
+    border-color: white;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
@@ -77,6 +88,7 @@ button{
 
 .section2content{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
     gap: 20px;
@@ -85,6 +97,9 @@ button{
 .singlecontaner{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .singleContaner > img{
@@ -98,12 +113,15 @@ button{
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
+    padding: 50px;
+    gap: 20px;
 }
 
 .quote{
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
+    font-weight: 50;
 }
 .author{
     margin-left: auto;
@@ -118,13 +136,20 @@ button{
 
 .sect4box{
     display: flex;
+    justify-content: space-around;
     background-color: #3882f6;
     width: 800px;
-    color: #f9faf8
+    color: #f9faf8;
+    Margin: 30px;
+    padding: 30px;
+    gap: 20px;
 }
 
 .footer{
     background-color: #1F2937;
     text-align: center;
-    color: #f9faf8
+    color: #f9faf8;
+    padding: 10px;
+    font-size: 10px;
+    flex: 0 0 auto;
 }
